@@ -6,6 +6,7 @@
 
 :root {
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -25,10 +26,47 @@ body .login-box {
   display: grid;
   grid-template-columns: 49% 2% 49%;
   grid-template-rows: 90% 10%;
+  box-shadow: 0px 0px 25px rgba(71, 71, 71, 0.7);
 }
 
 .left {
-  border: 1px dashed red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.left a {
+  width: 18rem;
+  height: 5rem;
+  border-radius: 5px;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  grid-template-columns: 1fr 2fr;
+  text-decoration: none;
+  color: white;
+  font-size: 1.25rem;
+}
+.left a:hover {
+  background-color: #130a3f80;
+}
+.left .facebook {
+  background-color: #0c5dd6;
+}
+.left .google {
+  background-color: #e94647;
+}
+.left .twitter {
+  background-color: #1a91da;
+}
+.left .fab {
+  padding: 0.25rem 1rem 0.25rem 0;
+  font-size: 2.5rem;
+  border-right: 1px solid white;
+}
+.left p {
+  align-self: center;
+  justify-self: start;
 }
 
 .middle {
