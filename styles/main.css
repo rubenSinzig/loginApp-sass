@@ -9,8 +9,39 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   background-image: url(../img/background.jpg);
   background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .login-box {
+  width: 55vw;
+  height: 60vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: grid;
+  grid-template-columns: 49% 2% 49%;
+  grid-template-rows: 90% 10%;
+}
+
+.left {
+  border: 1px dashed red;
+}
+
+.middle {
+  border: 1px dashed greenyellow;
+}
+
+.right {
+  border: 1px dashed red;
+}
+
+.footer {
+  border: 1px dashed blue;
+  grid-column: 1/4;
 }
 
 /*# sourceMappingURL=main.css.map */
