@@ -1,3 +1,50 @@
 .right {
-  border: 1px dashed red;
+  width: 27vw;
+  height: 54vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  color: $font-color;
+  padding: 2rem 0;
+  legend {
+    font-size: 1.8em;
+    text-decoration: overline solid 2px;
+  }
+  .input {
+    width: 17vw;
+    height: 5vh;
+    border-bottom: 1px solid $border-color;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  input {
+    width: 15vw;
+    height: 5vh;
+    font-size: 1.2rem;
+    border-style: none;
+    background-color: transparent;
+  }
+  input::placeholder {
+    color: rgba(16, 9, 62, 0.7);
+  }
+  button {
+    width: 5em;
+    height: 2em;
+    margin-left: 1rem;
+    background-color: rgba(16, 9, 62, 0.4);
+    border-style: solid;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  .check-login {
+    display: flex;
+    align-items: center;
+  }
+  .checkbox {
+    width: 1rem;
+    margin-right: 0.5rem;
+  }
 }
