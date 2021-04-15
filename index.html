@@ -9,5 +9,82 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="login-box">
+      <!-- login button left (facebook, google and twitter) -->
+
+      <section class="left">
+        <!-- facebook -->
+
+        <a href="https://www.facebook.com/" target="_blank" class="facebook"
+          ><i class="fab fa-facebook-square"></i>
+          <p>Facebook login</p></a
+        >
+
+        <!-- google -->
+
+        <a
+          href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp"
+          target="_blank"
+          class="google"
+          ><i class="fab fa-google-plus-square"></i>
+          <p>Google login</p></a
+        >
+
+        <!-- twitter -->
+
+        <a href="https://twitter.com/" target="_blank" class="twitter"
+          ><i class="fab fa-twitter-square"></i>
+          <p>Twitter login</p></a
+        >
+      </section>
+
+      <!-- middle (just border) -->
+
+      <section class="middle">
+        <div></div>
+      </section>
+
+      <!-- login form -->
+
+      <form class="right">
+        <legend>Sign in with</legend>
+
+        <!-- input (username or email) -->
+
+        <div class="input">
+          <i class="fas fa-user"></i>
+          <input
+            type="email"
+            name="userName"
+            placeholder="Username or email"
+            id="1"
+          />
+        </div>
+
+        <!-- input (password) -->
+
+        <div class="input">
+          <i class="fas fa-lock"></i>
+          <input type="password" name="pw" placeholder="Password" id="2" />
+        </div>
+
+        <!-- input (checkbox and login) -->
+
+        <div>
+          <input type="checkbox" name="remMe" id="3" />
+          <label>Remember me</label>
+          <a href="#"><button class="button">LOGIN</button></a>
+        </div>
+      </form>
+
+      <!-- footer -->
+
+      <section class="footer">
+        <a href="#">Register now</a>
+        <div></div>
+        <a href="#">Forgotten?</a>
+      </section>
+    </div>
+  </body>
 </html>
