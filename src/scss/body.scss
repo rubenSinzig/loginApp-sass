@@ -7,12 +7,12 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-.login-box {
-  width: 55vw;
-  height: 60vh;
-  background-color: $loginbox-color;
-  display: grid;
-  grid-template-columns: 49% 2% 49%;
-  grid-template-rows: 90% 10%;
+  .login-box {
+    width: 55vw;
+    height: 60vh;
+    background-color: $loginbox-color;
+    display: grid;
+    grid-template-columns: 49% 2% 49%;
+    grid-template-rows: 90% 10%;
+  }
 }
