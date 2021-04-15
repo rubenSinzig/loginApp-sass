@@ -30,6 +30,10 @@
   input::placeholder {
     color: rgba(16, 9, 62, 0.7);
   }
+  input:focus {
+    outline: none;
+    color: $font-color;
+  }
   button {
     width: 5em;
     height: 2em;
@@ -38,6 +42,9 @@
     border-style: solid;
     border-radius: 4px;
     font-size: 1rem;
+    &:hover {
+      background-color: $hover-color;
+    }
   }
   .check-login {
     display: flex;

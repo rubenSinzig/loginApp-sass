@@ -1,4 +1,22 @@
 .footer {
-  border: 1px dashed blue;
-  grid-column: 1/4;
+  width: 95%;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 49% 51%;
+  align-content: center;
+  grid-column: 1 / 4;
+  border-top: 1px solid $border-color;
+  background-color: $footerbackground-color;
+  a {
+    text-decoration: none;
+    color: $font-color;
+    padding: 0 0.75rem;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+  :nth-child(1) {
+    text-align: end;
+    border-right: 1px solid $border-color;
+  }
 }
